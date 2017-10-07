@@ -1,0 +1,112 @@
+" Saner defaults
+set nocompatible
+
+
+" Filetype recognition and auto config
+filetype indent plugin on
+syntax on
+
+
+set history=10000       " the maximum
+
+set ttyfast
+
+"set spell
+
+set encoding=utf-8
+set nrformats=hex
+
+set formatoptions+=j
+set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
+
+set showmatch           " Show matching brackets.
+
+" GUI improvements
+set shortmess+=I        " Don't show greeting screen when starting vim w/o file
+set mouse=a             " Enable mouse for all modes
+set laststatus=2        " Always show statusbar
+set cmdheight=2         " Command window always 2 (avoids hit enter dialogs)
+set ruler
+set showcmd
+set completeopt=longest,menuone,preview
+set wildmenu            " Better command line completion
+"set wildmode=list:longest
+set wildmode=longest:full
+
+set cursorline         " Draw a cursorline (makes redrawing slower)
+
+" open new splits to the right or below of the current one
+set splitright
+set splitbelow
+
+"set number
+set textwidth=80
+set colorcolumn=+1      " sweet!
+" 256 colors in terminal (default 16)
+set t_Co=256
+"display tabs and trailing spaces
+set list
+"set listchars=tab:».,trail:.,extends:>,precedes:<
+"set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣,eol:¬
+set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
+
+set autowrite           " Automatically save before commands like :next and :make
+set autoread            " Automatically reload file if it has changed outside of vim
+set display=lastline
+"Does not work so well with ctags :/
+"set autochdir           " Automatically switch pwd to dir of current file
+"set undofile            " persistent undo!
+"set undodir=~/.vim
+set hidden              " allow unsaved buffers to go into background
+
+set nowrap              " Don't wrap lines
+set linebreak           " If yes, then break at convenient points
+
+set noswapfile
+
+
+" Hmkay, since autodetection often fails, set the background explicitly
+"if has("gui_running")
+"    set background=light
+"else
+"    set background=dark
+"endif
+set background=dark
+colorscheme molokai
+"let g:molokai_original=1
+" colorscheme wombat256
+
+" Usability
+set ignorecase		" Do case insensitive matching...
+set smartcase		" ... but respect case if used
+set incsearch		" Incremental search (find as you type)
+set hlsearch		" Highlight all matches
+
+set backspace=indent,eol,start
+set autoindent          " Smooth indenting on newline
+
+" Tabs
+set expandtab           " Tabs to Spaces
+set softtabstop=4       " Fake Tabs feel like real ones when editing
+set shiftwidth=4        " A Tab equals 4 spaces
+
+
+" Turn off cursorline when in insert mode
+autocmd InsertEnter,InsertLeave * set cursorline!
+
+" Turn off colorcolumn in quickfix mode
+autocmd Filetype qf setlocal colorcolumn=0
+
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+
+" fix colors for spell (cursorbar)
+"hi SpellCap ctermfg=LightBlue ctermbg=NONE
+"hi SpellBad ctermfg=Red ctermbg=NONE
+"hi ColorColumn ctermfg=NONE ctermbg=235
+
+let Tlist_Sort_Type = "name"
+let Tlist_Show_One_File = 1
+let Tlist_Enable_Fold_Column = 0
+let Tlist_Use_Right_Window = 1
+let Tlist_Compact_Format = 1
