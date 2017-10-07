@@ -90,6 +90,11 @@ set expandtab           " Tabs to Spaces
 set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 
+let g:netrw_banner=0        " disable banner
+let g:netrw_browse_split=4  " open file in previous window
+let g:netrw_altv=1
+let g:netrw_liststyle=3     " tree view
+
 
 " Turn off cursorline when in insert mode
 autocmd InsertEnter,InsertLeave * set cursorline!
