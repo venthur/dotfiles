@@ -33,6 +33,9 @@ set wildmenu            " Better command line completion
 "set wildmode=list:longest
 set wildmode=longest:full
 
+" search down into subfolders, provides tab-completion for file related tasks
+set path+=**
+
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
 " open new splits to the right or below of the current one
