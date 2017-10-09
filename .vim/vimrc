@@ -45,14 +45,12 @@ set smartcase		" ... but respect case if used
 "set number
 set textwidth=80
 set colorcolumn=+1      " sweet!
-"display tabs and trailing spaces
 
 set backspace=indent,eol,start
 set autoindent
 
+""display tabs and trailing spaces
 set list
-"set listchars=tab:».,trail:.,extends:>,precedes:<
-"set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣,eol:¬
 set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 
 "Does not work so well with ctags :/
