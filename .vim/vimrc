@@ -11,6 +11,8 @@ set mouse=a             " Enable mouse for all modes
 
 set history=10000       " the maximum
 
+set noswapfile
+
 set ttyfast
 set belloff=all
 
@@ -59,7 +61,6 @@ set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 set nowrap              " Don't wrap lines
 set linebreak           " If yes, then break at convenient points
 
-set noswapfile
 "" Tabs
 "set smarttab
 set expandtab           " Tabs to Spaces
