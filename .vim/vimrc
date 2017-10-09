@@ -14,9 +14,6 @@ set history=10000       " the maximum
 set ttyfast
 set belloff=all
 
-"set spell
-
-set encoding=utf-8
 set nrformats=hex
 
 set formatoptions+=j
@@ -74,6 +71,13 @@ set clipboard=unnamedplus
 "" folding
 set foldenable
 set foldmethod=indent
+
+"" Spelling
+set spell
+
+"" Default encoding
+set encoding=utf-8
+
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
 set t_8f=[38;2;%lu;%lu;%lum
