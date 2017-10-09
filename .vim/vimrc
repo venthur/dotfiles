@@ -74,6 +74,9 @@ set expandtab           " Tabs to Spaces
 set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 
+"" folding
+set foldenable
+set foldmethod=indent
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
 set t_8f=[38;2;%lu;%lu;%lum
