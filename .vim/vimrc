@@ -5,6 +5,10 @@ set nocompatible
 filetype indent plugin on
 syntax on
 
+"" GUI improvements
+set shortmess+=I        " Don't show greeting screen when starting vim w/o file
+set mouse=a             " Enable mouse for all modes
+
 set history=10000       " the maximum
 
 set ttyfast
@@ -20,9 +24,6 @@ set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
 
 set showmatch           " Show matching brackets.
 
-" GUI improvements
-set shortmess+=I        " Don't show greeting screen when starting vim w/o file
-set mouse=a             " Enable mouse for all modes
 set laststatus=2        " Always show statusbar
 set cmdheight=2         " Command window always 2 (avoids hit enter dialogs)
 set ruler
