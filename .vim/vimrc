@@ -112,8 +112,8 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "hi SpellBad ctermfg=Red ctermbg=NONE
 "hi ColorColumn ctermfg=NONE ctermbg=235
 
-let Tlist_Sort_Type = "name"
-let Tlist_Show_One_File = 1
-let Tlist_Enable_Fold_Column = 0
-let Tlist_Use_Right_Window = 1
-let Tlist_Compact_Format = 1
+"let Tlist_Sort_Type = "name"
+"let Tlist_Show_One_File = 1
+"let Tlist_Enable_Fold_Column = 0
+"let Tlist_Use_Right_Window = 1
+"let Tlist_Compact_Format = 1
