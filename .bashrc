@@ -25,7 +25,7 @@ shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -76,13 +76,16 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 #alias ll='ls -l'
@@ -112,20 +115,12 @@ fi
 export DEBEMAIL="venthur@debian.org"
 export DEBFULLNAME="Bastian Venthur"
 
-# Mein Lieblingseditor, egal was Systemstandard ist
 export EDITOR=vim
 export VISUAL=vim
-
 
 alias ll='ls -l'
 alias la='ls -la'
 alias lh='ls -lh'
 alias lt='ls -lhtr'
 alias ..='cd ..'
-
-#export CDPATH=".:~"
-
-export BIBINPUTS=.:~/svn/texmf/bibtex/bib/
-
-[ -z "$TMUX" ] && export TERM="xterm-256color"
 
