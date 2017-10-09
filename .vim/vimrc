@@ -16,10 +16,6 @@ set noswapfile
 set ttyfast
 set belloff=all
 
-
-set formatoptions+=j
-set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
-
 set display=lastline
 set ruler
 set laststatus=2
@@ -59,6 +55,7 @@ set nrformats=bin,hex
 "Does not work so well with ctags :/
 "set autochdir           " Automatically switch pwd to dir of current file
 
+set formatoptions+=j	" Remove comment leader when joining lines
 
 "" Tabs
 "set smarttab
