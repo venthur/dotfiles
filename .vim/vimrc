@@ -44,6 +44,10 @@ set smartcase		" ... but respect case if used
 set textwidth=80
 set colorcolumn=+1      " sweet!
 "display tabs and trailing spaces
+
+set backspace=indent,eol,start
+set autoindent
+
 set list
 "set listchars=tab:».,trail:.,extends:>,precedes:<
 "set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣,eol:¬
@@ -94,8 +98,6 @@ hi SpellCap cterm=underline term=underline
 hi SpellRare cterm=underline term=underline
 hi SpellLocal cterm=underline term=underline
 
-set backspace=indent,eol,start
-set autoindent          " Smooth indenting on newline
 " don't underline cursorline
 hi Cursorline cterm=None term=None
 
