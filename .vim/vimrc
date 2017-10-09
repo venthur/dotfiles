@@ -1,15 +1,14 @@
 " Saner defaults
 set nocompatible
 
-
 " Filetype recognition and auto config
 filetype indent plugin on
 syntax on
 
-
 set history=10000       " the maximum
 
 set ttyfast
+set belloff=all
 
 "set spell
 
