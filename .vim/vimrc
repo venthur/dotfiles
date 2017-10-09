@@ -16,7 +16,6 @@ set noswapfile
 set ttyfast
 set belloff=all
 
-set nrformats=hex
 
 set formatoptions+=j
 set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
@@ -55,6 +54,7 @@ set linebreak           " If yes, then break at convenient points
 ""display tabs and trailing spaces
 set list
 set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
+set nrformats=bin,hex
 
 "Does not work so well with ctags :/
 "set autochdir           " Automatically switch pwd to dir of current file
