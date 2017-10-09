@@ -32,6 +32,8 @@ set wildmode=longest:full
 set path+=**
 
 set cursorline         " Draw a cursorline (makes redrawing slower)
+set autowrite           " Automatically save before commands like :next and :make
+set autoread
 
 " Searching
 set incsearch
@@ -48,8 +50,6 @@ set list
 "set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣,eol:¬
 set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 
-set autowrite           " Automatically save before commands like :next and :make
-set autoread            " Automatically reload file if it has changed outside of vim
 "Does not work so well with ctags :/
 "set autochdir           " Automatically switch pwd to dir of current file
 set hidden              " allow unsaved buffers to go into background
