@@ -70,12 +70,6 @@ set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
 set termguicolors
 
-" Hmkay, since autodetection often fails, set the background explicitly
-"if has("gui_running")
-"    set background=light
-"else
-"    set background=dark
-"endif
 set background=dark
 colorscheme evening
 
