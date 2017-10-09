@@ -37,9 +37,6 @@ set hlsearch
 set ignorecase		" Do case insensitive matching...
 set smartcase		" ... but respect case if used
 
-set textwidth=80
-set colorcolumn=+1      " sweet!
-
 set backspace=indent,eol,start
 set autoindent
 
@@ -59,6 +56,8 @@ set expandtab           " Tabs to Spaces
 set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 
+set textwidth=80
+"set colorcolumn=+1      " sweet!
 
 "" Proper Clipboard integration
 set clipboard=unnamedplus
