@@ -103,12 +103,7 @@ let g:netrw_liststyle=3     " tree view
 
 
 
-" Turn off colorcolumn in quickfix mode
-autocmd Filetype qf setlocal colorcolumn=0
-
-
-
-
+"
 "nnoremap <silent> <F8> :TlistToggle<CR>
 "let Tlist_Sort_Type = "name"
 "let Tlist_Show_One_File = 1
