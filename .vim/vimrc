@@ -68,6 +68,11 @@ set nowrap              " Don't wrap lines
 set linebreak           " If yes, then break at convenient points
 
 set noswapfile
+"" Tabs
+"set smarttab
+set expandtab           " Tabs to Spaces
+set softtabstop=4       " Fake Tabs feel like real ones when editing
+set shiftwidth=4        " A Tab equals 4 spaces
 
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
@@ -90,10 +95,6 @@ set autoindent          " Smooth indenting on newline
 " don't underline cursorline
 hi Cursorline cterm=None term=None
 
-" Tabs
-set expandtab           " Tabs to Spaces
-set softtabstop=4       " Fake Tabs feel like real ones when editing
-set shiftwidth=4        " A Tab equals 4 spaces
 
 let g:netrw_banner=0        " disable banner
 let g:netrw_browse_split=4  " open file in previous window
