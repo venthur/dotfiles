@@ -51,7 +51,6 @@ set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 
 "Does not work so well with ctags :/
 "set autochdir           " Automatically switch pwd to dir of current file
-set hidden              " allow unsaved buffers to go into background
 
 set nowrap              " Don't wrap lines
 set linebreak           " If yes, then break at convenient points
