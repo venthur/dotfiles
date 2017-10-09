@@ -31,7 +31,6 @@ set wildmode=longest:full
 " search down into subfolders, provides tab-completion for file related tasks
 set path+=**
 
-set cursorline         " Draw a cursorline (makes redrawing slower)
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
 
@@ -78,6 +77,8 @@ set spell
 "" Default encoding
 set encoding=utf-8
 
+set cursorline         " Draw a cursorline (makes redrawing slower)
+
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
 set t_8f=[38;2;%lu;%lu;%lum
@@ -106,8 +107,6 @@ let g:netrw_altv=1
 let g:netrw_liststyle=3     " tree view
 
 
-" Turn off cursorline when in insert mode
-autocmd InsertEnter,InsertLeave * set cursorline!
 
 " Turn off colorcolumn in quickfix mode
 autocmd Filetype qf setlocal colorcolumn=0
