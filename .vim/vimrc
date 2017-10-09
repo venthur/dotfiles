@@ -22,8 +22,6 @@ set nrformats=hex
 set formatoptions+=j
 set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
 
-set showmatch           " Show matching brackets.
-
 set display=lastline
 set ruler
 set laststatus=2
