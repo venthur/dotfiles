@@ -37,7 +37,6 @@ set hlsearch
 set ignorecase		" Do case insensitive matching...
 set smartcase		" ... but respect case if used
 
-"set number
 set textwidth=80
 set colorcolumn=+1      " sweet!
 
