@@ -104,7 +104,6 @@ autocmd InsertEnter,InsertLeave * set cursorline!
 " Turn off colorcolumn in quickfix mode
 autocmd Filetype qf setlocal colorcolumn=0
 
-nnoremap <silent> <F8> :TlistToggle<CR>
 
 
 " fix colors for spell (cursorbar)
@@ -112,6 +111,7 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 "hi SpellBad ctermfg=Red ctermbg=NONE
 "hi ColorColumn ctermfg=NONE ctermbg=235
 
+"nnoremap <silent> <F8> :TlistToggle<CR>
 "let Tlist_Sort_Type = "name"
 "let Tlist_Show_One_File = 1
 "let Tlist_Enable_Fold_Column = 0
