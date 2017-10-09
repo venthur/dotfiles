@@ -44,8 +44,6 @@ set splitbelow
 "set number
 set textwidth=80
 set colorcolumn=+1      " sweet!
-" 256 colors in terminal (default 16)
-set t_Co=256
 "display tabs and trailing spaces
 set list
 "set listchars=tab:».,trail:.,extends:>,precedes:<
@@ -66,6 +64,11 @@ set linebreak           " If yes, then break at convenient points
 
 set noswapfile
 
+" set true colors
+" help xterm-true-color (needed to work inside tmux)
+set t_8f=[38;2;%lu;%lu;%lum
+set t_8b=[48;2;%lu;%lu;%lum
+set termguicolors
 
 " Hmkay, since autodetection often fails, set the background explicitly
 "if has("gui_running")
@@ -74,18 +77,24 @@ set noswapfile
 "    set background=dark
 "endif
 set background=dark
-colorscheme molokai
-"let g:molokai_original=1
-" colorscheme wombat256
+colorscheme evening
 
 " Usability
 set ignorecase		" Do case insensitive matching...
 set smartcase		" ... but respect case if used
 set incsearch		" Incremental search (find as you type)
 set hlsearch		" Highlight all matches
+" quick fixes for termguicolors
+" replace undercurl with underline
+hi SpellBad cterm=underline term=underline
+hi SpellCap cterm=underline term=underline
+hi SpellRare cterm=underline term=underline
+hi SpellLocal cterm=underline term=underline
 
 set backspace=indent,eol,start
 set autoindent          " Smooth indenting on newline
+" don't underline cursorline
+hi Cursorline cterm=None term=None
 
 " Tabs
 set expandtab           " Tabs to Spaces
@@ -106,10 +115,6 @@ autocmd Filetype qf setlocal colorcolumn=0
 
 
 
-" fix colors for spell (cursorbar)
-"hi SpellCap ctermfg=LightBlue ctermbg=NONE
-"hi SpellBad ctermfg=Red ctermbg=NONE
-"hi ColorColumn ctermfg=NONE ctermbg=235
 
 "nnoremap <silent> <F8> :TlistToggle<CR>
 "let Tlist_Sort_Type = "name"
