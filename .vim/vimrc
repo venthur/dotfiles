@@ -37,9 +37,6 @@ set path+=**
 
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
-" open new splits to the right or below of the current one
-set splitright
-set splitbelow
 " Searching
 set incsearch
 set hlsearch
