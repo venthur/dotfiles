@@ -23,10 +23,11 @@ set showcmd
 
 set completeopt=longest,menuone,preview
 
-" search down into subfolders, provides tab-completion for file related tasks
-set path+=**
 set wildmenu
 set wildmode=longest:full
+
+" search down into subfolders, provides tab-completion for file related tasks
+set path+=**
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
@@ -93,15 +94,13 @@ hi SpellLocal cterm=underline term=underline
 " don't underline cursorline
 hi Cursorline cterm=None term=None
 
-
+" netrw options
 let g:netrw_banner=0        " disable banner
 let g:netrw_browse_split=4  " open file in previous window
 let g:netrw_altv=1
 let g:netrw_liststyle=3     " tree view
 
-
-
-"
+" taglist options
 "nnoremap <silent> <F8> :TlistToggle<CR>
 "let Tlist_Sort_Type = "name"
 "let Tlist_Show_One_File = 1
