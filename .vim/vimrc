@@ -24,9 +24,9 @@ set nojoinspaces        " Dont insert two spaces after .?! when using J or gq
 
 set showmatch           " Show matching brackets.
 
-set laststatus=2        " Always show statusbar
-set cmdheight=2         " Command window always 2 (avoids hit enter dialogs)
+set display=lastline
 set ruler
+set laststatus=2
 set showcmd
 set completeopt=longest,menuone,preview
 set wildmenu            " Better command line completion
@@ -55,7 +55,6 @@ set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread            " Automatically reload file if it has changed outside of vim
-set display=lastline
 "Does not work so well with ctags :/
 "set autochdir           " Automatically switch pwd to dir of current file
 "set undofile            " persistent undo!
