@@ -85,6 +85,9 @@ set termguicolors
 set background=dark
 colorscheme evening
 
+"" Misc
+set nojoinspaces        " Don't insert two spaces after .?! when joining lines
+
 " quick fixes for termguicolors
 " replace undercurl with underline
 hi SpellBad cterm=underline term=underline
