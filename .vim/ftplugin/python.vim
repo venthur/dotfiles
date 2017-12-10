@@ -1,3 +1,8 @@
+" preferred width for text is 72, for code 79!
+" we usually don't autoformat code, so...
+set textwidth=72
+set formatoptions=cq
+
 autocmd BufWritePre <buffer> call TrimWhiteSpace()
 
 fun! TrimWhiteSpace()
