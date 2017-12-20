@@ -27,6 +27,10 @@ set completeopt=longest,menuone,preview
 set wildmenu
 set wildmode=longest:full
 
+" open new split panes to right and bottom
+set splitright
+set splitbelow
+
 " search down into subfolders, provides tab-completion for file related tasks
 set path+=**
 
