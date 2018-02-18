@@ -36,6 +36,7 @@ set path+=**
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
+set autochdir
 
 " Searching
 set incsearch
