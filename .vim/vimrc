@@ -32,7 +32,7 @@ set splitright
 set splitbelow
 
 " search down into subfolders, provides tab-completion for file related tasks
-set path+=**
+" set path+=**
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
