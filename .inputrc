@@ -1,6 +1,8 @@
 set completion-ignore-case on
+set completion-map-case on
+set colored-stats on
+
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set colored-completion-prefix on
 set skip-completed-text on
-set colored-stats on
