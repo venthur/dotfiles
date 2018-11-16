@@ -1,7 +1,7 @@
 " preferred width for text is 72, for code 79!
-set textwidth=72
+setlocal textwidth=72
 " we don't autowrap code, only text stuff
-set formatoptions-=t
+setlocal formatoptions-=t
 
 " sytastic uses python which currently points to python2 -- this causes
 " some syntax errors

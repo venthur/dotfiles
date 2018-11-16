@@ -1,3 +1,3 @@
 autocmd Filetype tex setlocal makeprg=pdflatex\ -interaction=nonstopmode\ -file-line-error\ %
 
-set wildignore=*.aux,*.pdf,*.log
+setlocal wildignore=*.aux,*.pdf,*.log
