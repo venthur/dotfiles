@@ -6,3 +6,7 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set colored-completion-prefix on
 set skip-completed-text on
+
+# incrementally search history (i.e. ss <up> -> )
+"\e[A": history-search-backward
+"\e[B": history-search-forward
