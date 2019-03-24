@@ -1,0 +1,5 @@
+[user]
+	name = Bastian Venthur
+	email = venthur@debian.org
+[alias]
+	hist = log --graph --oneline --decorate
