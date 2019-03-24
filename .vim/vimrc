@@ -88,7 +88,7 @@ set t_8b=[48;2;%lu;%lu;%lum
 set termguicolors
 
 set background=dark
-colorscheme evening
+"colorscheme evening
 
 "" Misc
 set nojoinspaces        " Don't insert two spaces after .?! when joining lines
