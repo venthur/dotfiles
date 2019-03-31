@@ -1,3 +1,4 @@
+# man readline
 set completion-ignore-case on
 set completion-map-case on
 set colored-stats on
@@ -6,6 +7,12 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set colored-completion-prefix on
 set skip-completed-text on
+
+# don't ask for completion if more than x completions
+set completion-query-items -1
+# don't use a pager but show everything at once
+set page-completions off
+
 
 # incrementally search history (i.e. ss <up> -> )
 "\e[A": history-search-backward
