@@ -64,7 +64,7 @@ esac
 PROMPT_DIRTRIM=1
 GIT_PS1_SHOWDIRTYSTATE=1
 
-PS1='${debian_chroot:+($debian_chroot)}\[${green}\]\u@\h\[${reset}\]:\[${blue}\]\w\[${green}\]$(__git_ps1)\[${reset}\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[${bold}${orange}\]\u@\h\[${reset}\]:\[${bold}${blue}\]\w\[${orange}\]$(__git_ps1)\[${reset}\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
