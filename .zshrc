@@ -49,11 +49,7 @@ zstyle ':vcs_info:*' check-for-staged-changes true
 
 precmd() {
     vcs_info
-    PROMPT='%B%F{yellow}%n@%m%f%b:%B%F{blue}%1~%f%b'
-    if [[ -n ${vcs_info_msg_0_} ]]; then
-        PROMPT+='%B%F{yellow}${vcs_info_msg_0_}%f%b'
-    fi
-    PROMPT+='%# '
 }
+PROMPT='%B%F{yellow}%n@%m%f%b:%B%F{blue}%1~%f%b%B%F{yellow}${vcs_info_msg_0_}%f%b%# '
 RPROMPT='%~'
 
