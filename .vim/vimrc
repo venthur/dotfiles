@@ -22,6 +22,9 @@ set ruler
 set laststatus=2
 set showcmd
 
+" allow virtual editing in all modes
+set virtualedit=all
+
 set completeopt=longest,menuone,preview
 
 set wildmenu
