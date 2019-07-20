@@ -28,7 +28,7 @@ set virtualedit=all
 set completeopt=longest,menuone,preview
 
 set wildmenu
-set wildmode=longest:full
+set wildmode=longest:full,full  " do full completion on second keystroke
 
 " open new split panes to right and bottom
 set splitright
