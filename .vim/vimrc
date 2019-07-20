@@ -118,11 +118,3 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors = 1
-
-" taglist options
-"nnoremap <silent> <F8> :TlistToggle<CR>
-"let Tlist_Sort_Type = "name"
-"let Tlist_Show_One_File = 1
-"let Tlist_Enable_Fold_Column = 0
-"let Tlist_Use_Right_Window = 1
-"let Tlist_Compact_Format = 1
