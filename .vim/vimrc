@@ -73,7 +73,7 @@ set textwidth=79
 set clipboard=unnamedplus
 
 "" folding
-set foldenable
+" the default 'manual' is not very useful
 set foldmethod=indent
 
 "" Spelling
