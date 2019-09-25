@@ -5,7 +5,7 @@ setlocal formatoptions-=t
 
 " sytastic uses python which currently points to python2 -- this causes
 " some syntax errors
-" let g:syntastic_python_exec = "/usr/bin/python3"
+let g:syntastic_python_exec = "/usr/bin/python3"
 
 autocmd BufWritePre <buffer> call TrimWhiteSpace()
 
