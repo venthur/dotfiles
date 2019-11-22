@@ -11,7 +11,14 @@ set mouse=a             " Enable mouse for all modes
 
 set history=10000       " the maximum
 
-set noswapfile
+
+" directory for swapfiles
+set directory=~/.vim/swap//
+" backupdir
+set backupdir=~/.vim/backup
+" store undos
+set undofile
+set undodir=~/.vim/undo
 
 set ttyfast
 set belloff=all
@@ -108,8 +115,6 @@ hi Cursorline cterm=None term=None
 
 " netrw options
 let g:netrw_banner=0        " disable banner
-"let g:netrw_browse_split=4  " open file in previous window
-let g:netrw_altv=1
 let g:netrw_liststyle=3     " tree view
 let g:netrw_winsize=0       " split new windows equal
 
