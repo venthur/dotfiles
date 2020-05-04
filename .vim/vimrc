@@ -13,12 +13,12 @@ set history=10000       " the maximum
 
 
 " directory for swapfiles
-set directory=~/.vim/swap//
-" backupdir
-set backupdir=~/.vim/backup
-" store undos
-set undofile
-set undodir=~/.vim/undo
+"set directory=~/.vim/swap//
+"" backupdir
+"set backupdir=~/.vim/backup
+"" store undos
+"set undofile
+"set undodir=~/.vim/undo
 
 set ttyfast
 set belloff=all
