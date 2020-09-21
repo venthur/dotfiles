@@ -30,7 +30,7 @@ set laststatus=2
 set showcmd
 
 " allow virtual editing in all modes
-set virtualedit=all
+" set virtualedit=all
 
 set completeopt=longest,menuone,preview
 
@@ -43,9 +43,11 @@ set splitbelow
 
 " search down into subfolders, provides tab-completion for file related tasks
 " set path+=**
-
-set include=
+"remove /usr/include from path
 set path=.,,
+
+" disable vim's default for C programs to search for includes
+set include=
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
