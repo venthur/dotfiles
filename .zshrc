@@ -52,4 +52,3 @@ precmd() {
 }
 PROMPT='%B%F{yellow}%n@%m%f%b:%B%F{blue}%1~%f%b%B%F{yellow}${vcs_info_msg_0_}%f%b%# '
 RPROMPT='%~'
-
