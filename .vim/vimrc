@@ -78,7 +78,7 @@ set expandtab           " Tabs to Spaces
 set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 
-set textwidth=79
+set textwidth=78
 "set colorcolumn=+1      " sweet!
 
 "" Proper Clipboard integration
