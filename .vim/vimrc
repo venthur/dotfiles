@@ -11,15 +11,6 @@ set mouse=a             " Enable mouse for all modes
 
 set history=10000       " the maximum
 
-
-" directory for swapfiles
-"set directory=~/.vim/swap//
-"" backupdir
-"set backupdir=~/.vim/backup
-"" store undos
-"set undofile
-"set undodir=~/.vim/undo
-
 set ttyfast
 set belloff=all
 set lazyredraw
@@ -28,9 +19,6 @@ set display=lastline
 set ruler
 set laststatus=2
 set showcmd
-
-" allow virtual editing in all modes
-" set virtualedit=all
 
 set completeopt=longest,menuone,preview
 
@@ -51,7 +39,6 @@ set include=
 
 set autowrite           " Automatically save before commands like :next and :make
 set autoread
-" set autochdir
 
 " Searching
 set incsearch
@@ -70,7 +57,7 @@ set list
 set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
 set nrformats=bin,hex
 
-set formatoptions+=j	" Remove comment leader when joining lines
+set formatoptions+=j    " Remove comment leader when joining lines
 
 "" Tabs
 "set smarttab
@@ -79,7 +66,6 @@ set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 
 set textwidth=78
-"set colorcolumn=+1      " sweet!
 
 "" Proper Clipboard integration
 set clipboard=unnamedplus
@@ -105,7 +91,6 @@ set t_8b=[48;2;%lu;%lu;%lum
 set termguicolors
 
 set background=dark
-"colorscheme evening
 
 "" Misc
 set nojoinspaces        " Don't insert two spaces after .?! when joining lines
