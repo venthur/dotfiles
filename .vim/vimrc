@@ -96,10 +96,10 @@ set nojoinspaces        " Don't insert two spaces after .?! when joining lines
 
 " quick fixes for termguicolors
 " replace undercurl with underline
-hi SpellBad cterm=italic term=italic ctermbg=None
-hi SpellCap cterm=italic term=italic ctermbg=None
-hi SpellRare cterm=italic term=italic ctermbg=None
-hi SpellLocal cterm=italic term=italic ctermbg=None
+hi SpellBad cterm=underline ctermbg=None
+hi SpellCap cterm=underline ctermbg=None
+hi SpellRare cterm=underline ctermbg=None
+hi SpellLocal cterm=underline ctermbg=None
 
 " don't underline cursorline
 hi Cursorline cterm=None term=None
