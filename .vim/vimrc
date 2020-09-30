@@ -43,19 +43,18 @@ set autoread
 " Searching
 set incsearch
 set hlsearch
-set ignorecase		" Do case insensitive matching...
-set smartcase		" ... but respect case if used
+set ignorecase          " Do case insensitive matching...
+set smartcase           " ... but respect case if used
 
 set backspace=indent,eol,start
 set autoindent
 
 set nowrap              " Don't wrap lines
-set linebreak           " If yes, then break at convenient points
 
 ""display tabs and trailing spaces
 set list
 set listchars=extends:⇒,precedes:⇐,tab:▷·,trail:␣
-set nrformats=bin,hex
+set nrformats-=octal
 
 set formatoptions+=j    " Remove comment leader when joining lines
 
