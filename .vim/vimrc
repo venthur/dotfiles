@@ -82,7 +82,7 @@ set spell
 "" Default encoding
 set encoding=utf-8
 
-"set cursorline         " Draw a cursorline (makes redrawing slower)
+set cursorline         " Draw a cursorline (makes redrawing slower)
 
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
@@ -103,7 +103,8 @@ hi SpellRare cterm=underline ctermbg=None
 hi SpellLocal cterm=underline ctermbg=None
 
 " don't underline cursorline
-"hi Cursorline cterm=None term=None
+hi Cursorline cterm=None
+hi CursorlineNr cterm=None
 
 " netrw options
 let g:netrw_banner=0        " disable banner
