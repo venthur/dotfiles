@@ -97,14 +97,14 @@ set nojoinspaces        " Don't insert two spaces after .?! when joining lines
 
 " quick fixes for termguicolors
 " replace undercurl with underline
-hi SpellBad cterm=underline ctermbg=None
-hi SpellCap cterm=underline ctermbg=None
-hi SpellRare cterm=underline ctermbg=None
-hi SpellLocal cterm=underline ctermbg=None
+hi SpellBad term=italic cterm=italic ctermbg=None
+hi SpellCap term=italic cterm=italic ctermbg=None
+hi SpellRare term=italic cterm=italic ctermbg=None
+hi SpellLocal term=italic cterm=italic ctermbg=None
 
 " don't underline cursorline
-hi Cursorline cterm=None
-hi CursorlineNr cterm=None
+hi Cursorline term=None cterm=None
+hi CursorlineNr term=None cterm=None
 
 " netrw options
 let g:netrw_banner=0        " disable banner
