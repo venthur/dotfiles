@@ -15,3 +15,5 @@
 	prompt = false
 [pull]
 	rebase = false
+[commit]
+	verbose = true
