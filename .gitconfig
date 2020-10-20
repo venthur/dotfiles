@@ -1,6 +1,17 @@
 [user]
-    name = Bastian Venthur
-    email = venthur@debian.org
+	name = Bastian Venthur
+	email = bastian.venthur@flixbus.com
 
 [alias]
-    graph = log --graph --oneline --all --simplify-by-decoration
+        graph = log --graph --oneline --all --simplify-by-decoration
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+	conflictStyle = diff3
+[mergetool]
+	prompt = false
+[pull]
+	rebase = false
