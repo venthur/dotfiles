@@ -86,9 +86,9 @@ set cursorline         " Draw a cursorline (makes redrawing slower)
 
 " set true colors
 " help xterm-true-color (needed to work inside tmux)
-set t_8f=[38;2;%lu;%lu;%lum
-set t_8b=[48;2;%lu;%lu;%lum
-set termguicolors
+" set t_8f=[38;2;%lu;%lu;%lum
+" set t_8b=[48;2;%lu;%lu;%lum
+" set termguicolors
 
 set background=dark
 
@@ -102,9 +102,9 @@ hi SpellCap term=italic cterm=italic ctermbg=None
 hi SpellRare term=italic cterm=italic ctermbg=None
 hi SpellLocal term=italic cterm=italic ctermbg=None
 
-" don't underline cursorline
-hi Cursorline term=None cterm=None
-hi CursorlineNr term=None cterm=None
+" don't underline cursorline give it the same color as the cursorcolor
+hi Cursorline term=None cterm=None ctermbg=242
+hi CursorlineNr term=None cterm=None ctermbg=242
 
 " netrw options
 let g:netrw_banner=0        " disable banner
