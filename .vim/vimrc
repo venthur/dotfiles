@@ -1,6 +1,8 @@
 " Saner defaults
 set nocompatible
 
+set noswapfile
+
 " Filetype recognition and auto config
 filetype indent plugin on
 syntax on
