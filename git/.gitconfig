@@ -1,6 +1,6 @@
 [user]
 	name = Bastian Venthur
-	email = venthur@debian.org
+	email = bastian.venthur@flixbus.com
 
 [alias]
         graph = log --graph --oneline --all --simplify-by-decoration
