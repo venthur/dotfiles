@@ -15,7 +15,5 @@
 	prompt = false
 [pull]
 	rebase = false
-[commit]
-	verbose = true
 [branch]
         sort = -authordate
