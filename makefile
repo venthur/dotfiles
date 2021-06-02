@@ -1,2 +1,2 @@
 all:
-	stow --target=$$HOME --restow */
+	stow --verbose --target=$$HOME --restow */
