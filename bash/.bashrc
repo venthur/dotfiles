@@ -119,7 +119,6 @@ export DEBEMAIL="venthur@debian.org"
 export DEBFULLNAME="Bastian Venthur"
 
 export EDITOR=vim
-export PAGER=less
 
 alias ll='ls -l'
 alias la='ls -la'
