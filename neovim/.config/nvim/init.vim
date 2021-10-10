@@ -63,10 +63,12 @@ set cursorline         " Draw a cursorline (makes redrawing slower)
 "" netrw options
 "let g:netrw_banner=0        " disable banner
 "let g:netrw_liststyle=3     " tree view
-"let g:netrw_winsize=0       " split new windows equal
 "
 "" syntastic options
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 "let g:syntastic_aggregate_errors = 1
+
+" toggle file explorer on the left hand side
+:map <Leader>e :Lexplore<CR>
