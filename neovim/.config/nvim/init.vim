@@ -1,5 +1,5 @@
 """ GUI improvements
-"set termguicolors
+set termguicolors
 "
 "set shortmess+=I        " Don't show greeting screen when starting vim w/o file
 set mouse=a             " Enable mouse for all modes
@@ -51,8 +51,8 @@ set clipboard=unnamedplus
 "" set nofoldenable
 "
 """ Spelling
-"set spell
-"
+set spell
+
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
 """ Misc
