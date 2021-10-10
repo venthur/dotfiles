@@ -71,4 +71,4 @@ set cursorline         " Draw a cursorline (makes redrawing slower)
 "let g:syntastic_aggregate_errors = 1
 
 " toggle file explorer on the left hand side
-:map <Leader>e :Lexplore<CR>
+:map <Leader>e :30Lexplore<CR>
