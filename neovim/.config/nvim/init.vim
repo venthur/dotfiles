@@ -4,8 +4,6 @@ set termguicolors
 "set shortmess+=I        " Don't show greeting screen when starting vim w/o file
 set mouse=a             " Enable mouse for all modes
 
-set hidden
-
 "set completeopt=longest,menuone,preview
 "
 "set wildmode=longest:full,full  " do full completion on second keystroke
