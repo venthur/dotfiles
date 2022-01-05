@@ -1,7 +1,7 @@
 """ GUI improvements
 set termguicolors
 "
-"set shortmess+=I        " Don't show greeting screen when starting vim w/o file
+set shortmess+=I        " Don't show greeting screen when starting vim w/o file
 set mouse=a             " Enable mouse for all modes
 
 "set completeopt=longest,menuone,preview
