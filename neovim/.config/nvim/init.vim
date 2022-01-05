@@ -54,8 +54,6 @@ set spell
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
 """ Misc
-"set nojoinspaces        " Don't insert two spaces after .?! when joining lines
-"
 "packadd! gnupg
 "
 "" netrw options
