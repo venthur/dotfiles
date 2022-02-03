@@ -37,22 +37,23 @@ shopt -s globstar
 tput sgr0; # reset colors
 bold=$(tput bold);
 reset=$(tput sgr0);
-base03=$(tput setaf 234);
-base02=$(tput setaf 235);
-base01=$(tput setaf 240);
-base00=$(tput setaf 241);
-base0=$(tput setaf 244);
-base1=$(tput setaf 245);
-base2=$(tput setaf 254);
-base3=$(tput setaf 230);
-yellow=$(tput setaf 136);
-orange=$(tput setaf 166);
-red=$(tput setaf 160);
-magenta=$(tput setaf 125);
-violet=$(tput setaf 61);
-blue=$(tput setaf 33);
-cyan=$(tput setaf 37);
-green=$(tput setaf 64);
+black=$(tput setaf 0);
+red=$(tput setaf 1);
+green=$(tput setaf 2);
+yellow=$(tput setaf 3);
+blue=$(tput setaf 4);
+magenta=$(tput setaf 5);
+cyan=$(tput setaf 6);
+white=$(tput setaf 7);
+brightblack=$(tput setaf 8);
+brightred=$(tput setaf 9);
+brightgreen=$(tput setaf 10);
+brightyellow=$(tput setaf 11);
+brightblue=$(tput setaf 12);
+brightmagenta=$(tput setaf 13);
+brightcyan=$(tput setaf 14);
+brightwhite=$(tput setaf 15);
+
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
@@ -67,7 +68,7 @@ esac
 PROMPT_DIRTRIM=1
 GIT_PS1_SHOWDIRTYSTATE=1
 
-PS1='${debian_chroot:+($debian_chroot)}\[${bold}${orange}\]\u@\h\[${reset}\]:\[${bold}${blue}\]\w\[${orange}\]$(__git_ps1)\[${reset}\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[${bold}${yellow}\]\u@\h\[${black}\]:\[${blue}\]\w\[${yellow}\]$(__git_ps1)\[${black}\]\$\[${reset}\] '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
