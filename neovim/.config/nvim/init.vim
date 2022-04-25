@@ -20,7 +20,7 @@ set splitbelow
 "" disable vim's default for C programs to search for includes
 "set include=
 "
-"set autowrite           " Automatically save before commands like :next and :make
+set autowrite           " Automatically save before commands like :next and :make
 "
 " Searching
 set ignorecase          " Do case insensitive matching...
