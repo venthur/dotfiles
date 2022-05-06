@@ -12,16 +12,8 @@ set mouse=a             " Enable mouse for all modes
 set splitright
 set splitbelow
 
-"" search down into subfolders, provides tab-completion for file related tasks
-"" set path+=**
-""remove /usr/include from path
-"set path=.,,
-"
-"" disable vim's default for C programs to search for includes
-"set include=
-"
 set autowrite           " Automatically save before commands like :next and :make
-"
+
 " Searching
 set ignorecase          " Do case insensitive matching...
 set smartcase           " ... but respect case if used
