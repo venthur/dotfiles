@@ -71,12 +71,6 @@ set textwidth=78
 "" Proper Clipboard integration
 set clipboard=unnamedplus
 
-"" folding
-" the default 'manual' is not very useful
-" set foldmethod=indent
-" but don't fold by default when opening a buffer
-" set nofoldenable
-
 "" Spelling
 set spell
 
