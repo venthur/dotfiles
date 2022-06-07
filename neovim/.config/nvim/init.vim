@@ -29,7 +29,7 @@ set softtabstop=4       " Fake Tabs feel like real ones when editing
 set shiftwidth=4        " A Tab equals 4 spaces
 set shiftround          " round indent (i.e. < >) to multiple of shiftwidth
 
-set textwidth=78
+set textwidth=79
 
 "" Proper Clipboard integration
 set clipboard=unnamedplus
