@@ -1,0 +1,18 @@
+MIRRORSITE=http://ftp.de.debian.org/debian
+PDEBUILD_PBUILDER=cowbuilder
+DEBBUILDOPTS="-i -I.git --changes-option=-S"
+#DEBBUILDOPTS="-i -I.git"
+#SOURCE_ONLY_CHANGES=yes
+
+# if i need to build with local packages as build deps
+#OTHERMIRROR="deb file:///tmp/pkg ./"
+#BINDMOUNTS="/tmp/pkg"
+#EXTRAPACKAGES=apt-utils
+#HOOKDIR="/tmp/hookdir"
+
+## ccache stuff
+#export CCACHE_DIR="/var/cache/pbuilder/ccache"
+#export PATH="/usr/lib/ccache:${PATH}"
+#EXTRAPACKAGES=ccache
+#BINDMOUNTS="${CCACHE_DIR}"
+
