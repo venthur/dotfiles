@@ -14,3 +14,7 @@ fun! TrimWhiteSpace()
     silent! %s/\s\+$//
     call setpos('.', cursor_pos)
 endfunction
+
+" help ft-python-indent
+let g:pyindent_open_paren = 'shiftwidth()'
+let g:pyindent_continue = 'shiftwidth()'
