@@ -4,10 +4,10 @@ set termguicolors
 set shortmess+=I        " Don't show greeting screen when starting vim w/o file
 set mouse=a             " Enable mouse for all modes
 
-"set completeopt=longest,menuone,preview
-"
-"set wildmode=longest:full,full  " do full completion on second keystroke
-"
+set completeopt=longest,menuone,preview
+
+set wildmode=longest:full,full  " do full completion on second keystroke
+
 " open new split panes to right and bottom
 set splitright
 set splitbelow
