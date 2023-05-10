@@ -39,6 +39,9 @@ set spell
 
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
+set scrolloff=1
+set sidescrolloff=2
+
 """ Misc
 "packadd! gnupg
 "
