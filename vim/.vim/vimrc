@@ -71,6 +71,9 @@ set encoding=utf-8
 
 set cursorline         " Draw a cursorline (makes redrawing slower)
 
+set scrolloff=1
+set sidescrolloff=2
+
 " set true colors
 set termguicolors
 " help xterm-true-color (needed to work inside tmux)
