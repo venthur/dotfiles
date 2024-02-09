@@ -35,24 +35,24 @@ shopt -s globstar
 
 # define some colors (solarized)
 tput sgr0; # reset colors
-bold=$(tput bold);
-reset=$(tput sgr0);
-black=$(tput setaf 0);
-red=$(tput setaf 1);
-green=$(tput setaf 2);
-yellow=$(tput setaf 3);
-blue=$(tput setaf 4);
-magenta=$(tput setaf 5);
-cyan=$(tput setaf 6);
-white=$(tput setaf 7);
-brightblack=$(tput setaf 8);
-brightred=$(tput setaf 9);
-brightgreen=$(tput setaf 10);
-brightyellow=$(tput setaf 11);
-brightblue=$(tput setaf 12);
-brightmagenta=$(tput setaf 13);
-brightcyan=$(tput setaf 14);
-brightwhite=$(tput setaf 15);
+bold="\[$(tput bold)\]"
+reset="\[$(tput sgr0)\]"
+black="\[$(tput setaf 0)\]"
+red="\[$(tput setaf 1)\]"
+green="\[$(tput setaf 2)\]"
+yellow="\[$(tput setaf 3)\]"
+blue="\[$(tput setaf 4)\]"
+magenta="\[$(tput setaf 5)\]"
+cyan="\[$(tput setaf 6)\]"
+white="\[$(tput setaf 7)\]"
+brightblack="\[$(tput setaf 8)\]"
+brightred="\[$(tput setaf 9)\]"
+brightgreen="\[$(tput setaf 10)\]"
+brightyellow="\[$(tput setaf 11)\]"
+brightblue="\[$(tput setaf 12)\]"
+brightmagenta="\[$(tput setaf 13)\]"
+brightcyan="\[$(tput setaf 14)\]"
+brightwhite="\[$(tput setaf 15)\]"
 
 
 # set variable identifying the chroot you work in (used in the prompt below)
@@ -65,10 +65,28 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
-PROMPT_DIRTRIM=1
+#PROMPT_DIRTRIM=1
 GIT_PS1_SHOWDIRTYSTATE=1
 
-PS1='${debian_chroot:+($debian_chroot)}\[${bold}${brightblack}\]\u@\h\[${brightblack}\]:\[${brightblue}\]\w\[${brightyellow}\]$(__git_ps1)\[${brightblack}\]\$\[${reset}\] '
+PROMPT_COMMAND=echo
+
+exit_code()
+{
+    code=$?
+    if [[ $code != 0 ]]; then
+        echo "exited $code"
+    fi
+}
+
+PS1="\
+${debian_chroot:+($debian_chroot)}\
+${bold}${magenta}\u \
+${white}at ${yellow}\h \
+${white}in ${green}\w\
+${yellow}\$(__git_ps1) \
+${red}\$(exit_code) \
+${reset}
+\$ "
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
