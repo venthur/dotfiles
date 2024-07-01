@@ -51,3 +51,6 @@ let g:netrw_liststyle=3     " tree view
 packadd! ale
 
 let g:ale_virtualtext_cursor = 0
+
+let mapleader = ' '
+let localleader = ' '
