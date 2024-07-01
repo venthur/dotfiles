@@ -1,6 +1,6 @@
 [user]
 	name = Bastian Venthur
-	email = bastian.venthur@flixbus.com
+	email = bastian.venthur@flix.com
 
 [alias]
         graph = log --graph --oneline --all --simplify-by-decoration
