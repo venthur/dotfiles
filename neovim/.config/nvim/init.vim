@@ -56,3 +56,9 @@ let localleader = ' '
 packadd! ale
 
 let g:ale_virtualtext_cursor = 0
+
+" source the fzf.vim plugin
+source /usr/share/doc/fzf/examples/plugin/fzf.vim
+
+nmap <silent> <leader>f :Files<CR>
+nmap <silent> <leader>/ :Rg<CR>
