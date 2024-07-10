@@ -41,6 +41,10 @@ set cursorline         " Draw a cursorline (makes redrawing slower)
 set scrolloff=1
 set sidescrolloff=2
 
+" Use space as leader key
+let mapleader = ' '
+let localleader = ' '
+
 """ Misc
 "packadd! gnupg
 "
