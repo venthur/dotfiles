@@ -50,7 +50,8 @@ let localleader = ' '
 "
 "" netrw options
 " let g:netrw_banner=0        " disable banner
-let g:netrw_liststyle=3     " tree view
+" let g:netrw_liststyle=3     " tree view
+" let g:netrw_keepdir=0       " keep current directory the same as the browsing directory
 
 packadd! ale
 
