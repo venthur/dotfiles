@@ -1,6 +1,4 @@
 """ GUI improvements
-set termguicolors
-
 set shortmess+=I        " Don't show greeting screen when starting vim w/o file
 
 set completeopt=longest,menuone,preview
