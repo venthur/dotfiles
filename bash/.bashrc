@@ -31,7 +31,7 @@ shopt -s checkwinsize
 shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
-#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # define some colors (solarized)
 tput sgr0; # reset colors
@@ -137,7 +137,9 @@ fi
 export DEBEMAIL="venthur@debian.org"
 export DEBFULLNAME="Bastian Venthur"
 
-export EDITOR=nvim
+export VISUAL=nvim
+
+export LESS=FRS
 
 alias ll='ls -l'
 alias la='ls -la'
