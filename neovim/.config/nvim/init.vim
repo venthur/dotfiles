@@ -15,6 +15,9 @@ set autowrite           " Automatically save before commands like :next and :mak
 set ignorecase          " Do case insensitive matching...
 set smartcase           " ... but respect case if used
 
+" preview substitutions as you type
+set inccommand=split
+
 set nowrap              " Don't wrap lines
 
 ""display tabs and trailing spaces
