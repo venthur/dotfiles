@@ -6,6 +6,9 @@
         graph = log --graph --oneline --all --simplify-by-decoration
 [diff]
 	tool = vimdiff
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
 [difftool]
 	prompt = false
 [merge]
@@ -16,4 +19,4 @@
 [pull]
 	rebase = false
 [branch]
-        sort = -authordate
+	sort = -committerdate
