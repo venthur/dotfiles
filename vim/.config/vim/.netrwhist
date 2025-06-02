@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/venthur/git/c4model'
+let g:netrw_dirhist_1='/home/venthur/.cache/.fr-ZGWMB2/flix'
+let g:netrw_dirhist_0='/home/venthur/notes/resource'
+let g:netrw_dirhist_9='/home/venthur/notes/project'
+let g:netrw_dirhist_8='/home/venthur/notes/area'
+let g:netrw_dirhist_7='/home/venthur'
+let g:netrw_dirhist_6='/home/venthur/notes/archive'
+let g:netrw_dirhist_5='/home/venthur/notes'
+let g:netrw_dirhist_4='/home/venthur'
+let g:netrw_dirhist_3='/home/venthur/notes'
