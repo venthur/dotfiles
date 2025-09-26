@@ -86,3 +86,4 @@ vim.keymap.set(
     end,
     { silent = True }
 )
+vim.keymap.set('n', '<leader>s', ':set spell!<CR>', { silent = true })
